@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación - Aire Acondicionado Alicante</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style="font-family: Manrope, 'Noto Sans', sans-serif;">
+    <div class="layout-container flex h-full grow flex-col">
+      
+      <div id="header-container"></div>
+
+
+      <div class="flex flex-1 justify-center items-center px-40 py-5">
+        <div class="layout-content-container flex flex-col w-full max-w-[960px] py-5 text-center">
+          <h3 class="text-[#111418] tracking-light text-2xl font-bold leading-tight px-4 pb-2">¡Gracias por contactarnos!</h3>
+          <p class="text-[#111418] text-base font-normal leading-normal pb-3 px-4">
+            Hemos recibido su solicitud y nos pondremos en contacto con usted lo antes posible.
+          </p>
+          <a href="Index.html" class="inline-flex items-center justify-center mt-5 px-5 py-3 bg-[#1466b8] text-white text-sm font-bold leading-normal tracking-[0.015em] rounded-xl">Volver al inicio</a>
+        </div>
+      </div>
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+              <a class="text-[#637588] text-base font-normal leading-normal min-w-40" href="#">Términos y condiciones</a>
+              <a class="text-[#637588] text-base font-normal leading-normal min-w-40" href="#">Política de privacidad</a>
+              <a class="text-[#637588] text-base font-normal leading-normal min-w-40" href="#">Mapa del sitio</a>
+            </div>
+            <p class="text-[#637588] text-base font-normal leading-normal">2023 Aire acondicionado Alicante</p>
+          </footer>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<script>
+  // Cargar el header.html en el div con id "header-container"
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    });
+</script>
+
+<script>
+  // Cargar el header.html en el div con id "header-container"
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
