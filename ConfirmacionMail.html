@@ -21,7 +21,7 @@
           <p class="text-[#111418] text-base font-normal leading-normal pb-3 px-4">
             Hemos recibido su solicitud y nos pondremos en contacto con usted lo antes posible.
           </p>
-          <a href="/" class="inline-flex items-center justify-center mt-5 px-5 py-3 bg-[#1466b8] text-white text-sm font-bold leading-normal tracking-[0.015em] rounded-xl">Volver al inicio</a>
+          <a href="/" id="inicio-link" class="inline-flex items-center justify-center mt-5 px-5 py-3 bg-[#1466b8] text-white text-sm font-bold leading-normal tracking-[0.015em] rounded-xl">Volver al inicio</a>
         </div>
       </div>
       <footer class="flex justify-center">
@@ -58,4 +58,11 @@
     .then(data => {
       document.getElementById('footer-container').innerHTML = data;
     });
+
+
+    document.getElementById('inicio-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = '/';
+    });
+
 </script>
