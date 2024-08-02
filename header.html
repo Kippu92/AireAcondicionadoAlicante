@@ -13,9 +13,9 @@
                 </svg>
             </div>
             <h2>Aire Acondicionado Alicante</h2>
-        </div>
+        </a>
         <div class="contact">
-            Tel: 652 26 03 91
+            <a href="tel:+34652260391">Tel: 652 26 03 91</a>
         </div>
         <nav class="nav">
             <a href="/" id="inicio-link">Inicio</a>
@@ -29,78 +29,84 @@
 
 <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #f0f2f4;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #111418;
+    text-decoration: none;
+}
+.header .logo .size-4 {
+    width: 40px;
+    height: 40px;
+}
+.header .logo svg {
+    width: 100%;
+    height: 100%;
+}
+.header h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+.header .contact {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1e40af;
+}
+.header .contact a {
+    color: #1e40af;
+    text-decoration: none;
+}
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.header .nav a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #111418;
+}
+
+@media (min-width: 768px) {
     .header {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #f0f2f4;
-        padding: 10px 20px;
-        background-color: #fff;
-    }
-    .header .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: #111418;
-    }
-    .header .logo .size-4 {
-        width: 40px;
-        height: 40px;
-    }
-    .header .logo svg {
-        width: 100%;
-        height: 100%;
-    }
-    .header h2 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.4;
-        margin: 0;
-        text-align: center;
+        padding: 10px 40px;
     }
     .header .contact {
-        margin-top: 10px;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #1e40af;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+        font-size: 1.25rem;
     }
     .header .nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-        text-align: center;
+        flex-direction: row;
+        margin-top: 0;
     }
-    .header .nav a {
-        font-size: 0.875rem;
-        font-weight: 500;
-        text-decoration: none;
-        color: #111418;
-    }
+}
 
-    @media (min-width: 768px) {
-        .header {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 40px;
-        }
-        .header .contact {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-top: 0;
-            font-size: 1.25rem;
-        }
-        .header .nav {
-            flex-direction: row;
-            margin-top: 0;
-        }
-    }
 </style>
 
 
