@@ -18,7 +18,7 @@
             Tel: 652 26 03 91
         </div>
         <nav class="nav">
-            <a href="/">Inicio</a>
+            <a href="/" id="inicio-link">Inicio</a>
             <a href="Blog.html">Blog</a>
             <a href="Contacto.html">Contacto</a>
         </nav>
@@ -102,3 +102,11 @@
         }
     }
 </style>
+
+
+<script>
+    document.getElementById('inicio-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = '/';
+    });
+</script>
